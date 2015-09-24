@@ -1,0 +1,24 @@
+nav.navbar.navbar-inverse
+  .container-fluid
+    .navbar-header
+      button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      = link-to "application" class="navbar-brand" | Playlists
+      / a.navbar-brand href="#" Playlists
+    .collapse.navbar-collapse#bs-example-navbar-collapse-1
+      ul.nav.navbar-nav
+        li
+          / a href="/playlists" Example
+          = link-to "playlists" | Playlists
+      ul.nav.navbar-nav.navbar-right
+        li
+          a href="#" Sign Up
+        li
+          a href="#" Sign In
+.container-fluid
+  .row
+    .col-md-12
+      = outlet

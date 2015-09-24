@@ -1,0 +1,4 @@
+ul
+  each model as |playlist|
+    li= link-to "playlists.playlist" playlist.id | #{playlist.name}
+= outlet
